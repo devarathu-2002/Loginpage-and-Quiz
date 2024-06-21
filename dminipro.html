@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/js css/register.css">
+    <title>Document</title>
+    
+<body>
+    <script>
+        var count=0
+        function correct(){
+            count ++
+            document.body.style.backgroundColor="lightgreen";
+        }
+        function wrong(){
+            document.body.style.backgroundColor="#ff471a";
+        }
+        function result(){
+            alert(count)
+        }
+        function quiz(){
+            document.getElementById("n1").style.display="none";
+            document.getElementById("test").style.display="block";
+        }
+
+    </script>
+<div id="n1">
+<div class="body">
+    <h1>Registration Form and Quiz</h1>
+    
+    <h3 id="h3">Fill the Details</h3>
+    <hr>
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" placeholder="Type your Name" autocomplete="off" autofocus  class="input">
+    <br>
+    <label for="dob">DOB:</label><br>
+    <input type="date" id="dob"  autocomplete="off" required class="input">
+    <br>
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" placeholder="Type Your Number" autocomplete="off" required class="input">
+    <br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" placeholder="Type Your Email" autocomplete="off" required class="input">
+    <br>
+    
+    <label for="pass">Password:</label><br>
+    <input type="password" id="password" placeholder="Type Your Password" autocomplete="off"  class="input" required>
+    <br>
+    <label for="age">Age:</label><br>
+    <input type="number" id="number" placeholder="Type Your Age" autocomplete="off" required class="input" required>
+    <br>
+    <h3>Select your Gender</h3>
+    <input type="radio" id="male" name="gender" required class="input">
+    <label for="male">Male</label>
+    <br>
+   
+    
+    <input type="radio" id="female" name="gender" required class="input">
+    <label for="female">Female</label>
+    <br>
+    
+    
+    <input type="reset" id="reset" class="clear"><br>
+    <input type="submit" onclick="quiz()" class="clear1" >
+</div>   
+</div> 
+
+<div id="test" style="display:none">
+     <h1 id="h3">Attend The Quiz</h1>
+    <h3>What is my Favourite Color:</h3>
+    <input type="submit" value="Black" id="wrong" onclick="wrong()">
+    <input type="submit" value="Green" id="wrong" onclick="wrong()">
+    <input type="submit" value="Red" id="correct" onclick="correct()">
+    <input type="submit" value="Yellow" id="wrong" onclick="wrong()">
+    <h3>What is my Favourite Food:</h3>
+    <input type="submit" value="Briyani" id="wrong" onclick="wrong()">
+    <input type="submit" value="Fried Rice" id="wrong" onclick="wrong()">
+    <input type="submit" value="Dosa" id="correct" onclick="correct()">
+    <input type="submit" value="Egg Gravy" id="wrong" onclick="wrong()">
+    <h3>What is my Favourite Place:</h3>
+    <input type="submit" value="Quinze Land" id="wrong" onclick="wrong()">
+    <input type="submit" value="DhanushKodi" id="wrong" onclick="wrong()">
+    <input type="submit" value="chennai" id="wrong" onclick="wrong()">
+    <input type="submit" value="Theni" id="correct" onclick="correct()">
+    <h3>Who is my Favourite Cricket Player:</h3>
+    <input type="submit" value="Ms dhoni" id="wrong" onclick="wrong()">
+    <input type="submit" value="Virat Kohli" id="wrong" onclick="wrong()">
+    <input type="submit" value="Rohit Sharma" id="wrong" onclick="wrong()">
+    <input type="submit" value="Pathirana" id="correct" onclick="correct()">
+    <h3>Who is my Favourite Person:</h3>
+    <input type="submit" value="Mother" id="correct" onclick="correct()">
+    <input type="submit" value="Father" id="wrong" onclick="wrong()">
+    <input type="submit" value="Friends" id="wrong" onclick="wrong()">
+    <input type="submit" value="Family" id="wrong" onclick="wrong()">
+    <h3>What is my Favourite Animals:</h3>
+    <input type="submit" value="Cat" id="wrong" onclick="wrong()">
+    <input type="submit" value="Elephant" id="wrong" onclick="wrong()">
+    <input type="submit" value="Horse" id="wrong" onclick="wrong()">
+    <input type="submit" value="Dog"id="correct" onclick="correct()" >
+    <h3>What is my Biggest Fear:</h3> 
+    <input type="submit" value="Lizard" id="wrong" onclick="wrong()">
+    <input type="submit" value="Cockroach" id="correct" onclick="correct()">
+    <input type="submit" value="Ghost" id="wrong" onclick="wrong()">
+    <input type="submit" value="Snakes" id="wrong" onclick="wrong()">
+    <h3>What is my Favourite image:</h3>
+<button id="wrong" onclick="wrong()">
+    <input type="image" src="/allphotos/emoji1.jpg" widht="50px" height="50px">
+</button>
+<button id="wrong" onclick="wrong()">
+    <input type="image" src="/allphotos/emoji2.jpg" widht="50px" height="50px">
+</button >
+<button id="correct" onclick="correct()">   
+    <input type="image" src="/allphotos/emoji3.jpg" widht="50px" height="50px">
+</button> 
+<button id="wrong" onclick="wrong()">
+    <input type="image" src="/allphotos/emoji4.jpg" widht="50px" height="50px">
+</button>
+
+<h3>Who is my favourite Hero:</h3>
+
+     <input type="submit" value="Sk" id="wrong" onclick="wrong()">
+   <input type="submit" value="Surya" id="wrong" onclick="wrong()">
+    <input type="submit" value="Vijay" id="correct" onclick="correct()">
+    <input type="submit" value="Vijay Sethupathi" id="wrong" onclick="wrong()">
+    <h3>Who is my Favourite Dress:</h3>
+    <input type="submit" value="Suti" id="wrong" onclick="wrong()">
+    <input type="submit" value="Tshirts" id="correct" onclick="correct()">
+     <input type="submit" value="saree" id="correct"onclick="correct()" >
+   <input type="submit" value="Frogs" id="wrong" onclick="wrong()">
+<br>
+<br>
+<input type="submit" onclick="result()" id="touch">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
